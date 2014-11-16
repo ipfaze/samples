@@ -1,4 +1,5 @@
 Meteor.publish('publicLists', function() {
+  console.log("publicLists");
   return Lists.find({userId: {$exists: false}});
 });
 
