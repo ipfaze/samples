@@ -9,3 +9,4 @@ less
 iron:router@0.9.4
 accounts-password
 ongoworks:google-spreadsheets
+standard-minifiers
