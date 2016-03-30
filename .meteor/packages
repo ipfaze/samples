@@ -9,7 +9,8 @@ less
 iron:router@0.9.4
 accounts-password
 ongoworks:google-spreadsheets
-standard-minifiers
 dfischer:phantomjs
 spiderable
 meteorhacks:kadira
+standard-minifier-css
+standard-minifier-js
