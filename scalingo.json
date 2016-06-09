@@ -2,7 +2,7 @@
   "name": "Sample Meteor todo list",
   "description": "Sample todo list web app using meteor",
   "logo": "https://scalingo.com/logo.svg",
-  "repository": "https://github.com/Scalingo/sample-meteor-todo",
+  "repository": "https://github.com/johnsudaar/sample-meteor-todo",
   "website": "https://scalingo.com",
   "addons": ["scalingo-mongo"]
 }
