@@ -1,0 +1,21 @@
+{
+  "name": "sample-meteor-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mobile-config.js",
+  "dependencies": {
+    "phantomjs": "^2.1.7",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@scalingo.com:sample-meteor-todo.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
