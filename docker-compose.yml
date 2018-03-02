@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sample-php-slim:
+    image: php:7.2-apache
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/var/www/html
+    command: "php -S 0.0.0.0:3000 -t public public/index.php"
