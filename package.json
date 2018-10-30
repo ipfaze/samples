@@ -4,7 +4,8 @@
   "description": "",
   "main": "mobile-config.js",
   "dependencies": {
-    "@babel/runtime": "^7.1.2",
+    "@babel/runtime": "^7.0.0-beta.55",
+    "bcrypt": "^3.0.2",
     "phantomjs": "^2.1.7",
     "react": "^0.14.8",
     "react-dom": "^0.14.8"
