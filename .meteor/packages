@@ -5,12 +5,12 @@
 
 standard-app-packages@1.0.9
 insecure@1.0.7
-less@2.7.12
+less@2.8.0
 iron:router@0.9.4
-accounts-password@1.5.1
+accounts-password@1.5.2
 meteorhacks:kadira
-standard-minifier-css@1.4.1
-standard-minifier-js@2.3.4
+standard-minifier-css@1.6.0
+standard-minifier-js@2.6.0
 ongoworks:spiderable
-shell-server@0.3.1
-dynamic-import@0.4.2
+shell-server@0.4.0
+dynamic-import@0.5.1
