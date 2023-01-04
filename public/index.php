@@ -13,9 +13,19 @@ require __DIR__ . '/../vendor/autoload.php';
 
 session_start();
 
-// Instantiate the app
+// Create Container using PHP-DI
 $settings = require __DIR__ . '/../src/settings.php';
-$app = new \Slim\App($settings);
+use DI\Container;
+use DI\ContainerBuilder;
+$containerBuilder = new ContainerBuilder();
+$containerBuilder->addDefinitions(['settings' => $settings]);
+$container = $containerBuilder->build();
+
+
+// Instantiate the app
+use Slim\Factory\AppFactory;
+AppFactory::setContainer($container);
+$app = AppFactory::create();
 
 // Set up dependencies
 require __DIR__ . '/../src/dependencies.php';

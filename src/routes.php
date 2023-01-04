@@ -1,14 +1,16 @@
 <?php
 
-use Slim\Http\Request;
-use Slim\Http\Response;
+use Psr\Http\Message\ResponseInterface as Response;
+use Psr\Http\Message\ServerRequestInterface as Request;
 
-// Routes
 
 $app->get('/[{name}]', function (Request $request, Response $response, array $args) {
+    $logger = $this->get('logger');
+    $renderer = $this->get('renderer');
+
     // Sample log message
-    $this->logger->info("Slim-Skeleton '/' route");
+    $logger->info("Slim-Skeleton '/' route");
 
     // Render index view
-    return $this->renderer->render($response, 'index.phtml', $args);
+    return $renderer->render($response, 'index.phtml', $args);
 });

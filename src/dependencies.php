@@ -1,19 +1,23 @@
 <?php
 // DIC configuration
-
-$container = $app->getContainer();
+use Slim\Views\PhpRenderer;
 
 // view renderer
-$container['renderer'] = function ($c) {
-    $settings = $c->get('settings')['renderer'];
-    return new Slim\Views\PhpRenderer($settings['template_path']);
-};
+$container->set('renderer', function () {
+    global $settings;
+    $rendererSettings = $settings['settings']['renderer'];
+
+    return new PhpRenderer($rendererSettings['template_path']);
+});
+
 
 // monolog
-$container['logger'] = function ($c) {
-    $settings = $c->get('settings')['logger'];
-    $logger = new Monolog\Logger($settings['name']);
+$container->set('logger', function () {
+    global $settings;
+    $loggerSettings = $settings['settings']['logger'];
+    
+    $logger = new Monolog\Logger($loggerSettings['name']);
     $logger->pushProcessor(new Monolog\Processor\UidProcessor());
-    $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
+    $logger->pushHandler(new Monolog\Handler\StreamHandler($loggerSettings['path'], $loggerSettings['level']));
     return $logger;
-};
+});
