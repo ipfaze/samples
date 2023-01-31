@@ -13,3 +13,4 @@ standard-minifier-js@2.8.1
 ongoworks:spiderable
 shell-server@0.5.0
 dynamic-import@0.7.2
+service-configuration
