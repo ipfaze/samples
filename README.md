@@ -1,15 +1,35 @@
-# sample-meteor-todo
+## DEPRECATED
+This repository is not used anymore as an example for Meteor projects. 
 
-## In dev
+Look for Meteor examples [here](https://github.com/meteor/examples)
 
-Run the project with:
+## OLD README
+[![Circle CI](https://circleci.com/gh/meteor/todos.svg?style=svg)](https://circleci.com/gh/meteor/todos)
 
+This is a Todos example app built on the principles described in the [Meteor Guide](http://guide.meteor.com/structure.html). 
+
+## Versions
+
+This version (the `master`) branch uses the [Blaze](http://guide.meteor.com/blaze.html) rendering library, with code written in ES2015 JavaScript.
+
+The [`react`](https://github.com/meteor/todos/tree/react) branch implements the same application using [React](http://guide.meteor.com/react.html)
+
+The [`coffeescript`](https://github.com/meteor/todos/tree/coffeescript) branch implements this (the Blaze) version of the app in CoffeeScript.
+
+Note that attempts will be made to keep the branches up to date but this isn't guaranteed.
+
+### Running the app
+
+```bash
+meteor npm install
+meteor
 ```
-docker-compose up
+
+### Scripts
+
+To lint:
+
+```bash
+meteor npm run lint
 ```
-
-The application is reachable at [http://localhost:3000/](http://localhost:3000/).
-
-If needed to run any `meteor` command, just run `docker-compose run
-sample-meteor-todo meteor` instead of `meteor`.
 
