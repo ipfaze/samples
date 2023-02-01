@@ -1,23 +1,26 @@
 {
-  "name": "sample-meteor-todo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "mobile-config.js",
-  "dependencies": {
-    "@babel/runtime": "^7.20.7",
-    "bcrypt": "^5.1.0",
-    "phantomjs": "^2.1.7",
-    "react": "^0.14.8",
-    "react-dom": "^0.14.8"
-  },
-  "devDependencies": {},
+  "name": "simple-todos-svelte",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@scalingo.com:sample-meteor-todo.git"
+  "dependencies": {
+    "@babel/runtime": "^7.20.13",
+    "jquery": "^3.6.3",
+    "meteor-node-stubs": "^1.2.5",
+    "svelte": "^3.55.1"
   },
-  "author": "",
-  "license": "ISC"
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "chai": "^4.3.7"
+  }
 }

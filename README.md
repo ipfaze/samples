@@ -1,15 +1,11 @@
-# sample-meteor-todo
+# Simple Todo List
 
-## In dev
+The Meteor Tutorial app.
 
-Run the project with:
+Use it to share a single todo list with your friends. The list updates on everyone's screen in real time, and you can make tasks private if you don't want others to see them.
 
-```
-docker-compose up
-```
+Learn how to build this app by following the [Meteor Tutorial](http://www.meteor.com/install).
 
-The application is reachable at [http://localhost:3000/](http://localhost:3000/).
+Read more about building apps with Meteor in the [Meteor Guide](http://guide.meteor.com).
 
-If needed to run any `meteor` command, just run `docker-compose run
-sample-meteor-todo meteor` instead of `meteor`.
-
+![screenshot](screenshot.png)
